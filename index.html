@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Publer SRS</title>
+</head>
+
+<body>
+
+  <h1>Information</h1>
+
+  <ul>
+    <li>Version: 1.0.0</li>
+    <li>Authors: Daniel P., Ilya A.</li>
+    <li>Instructor: Andrey I.</li>
+    <li>Date: 23.03.2023</li>
+  </ul>
+  
+
+  <h1>Table of contents</h1>
+  <h2><a href="#1">1. INTRODUCTION</a></h2>
+  <h3><a href="#1.1">1.1 Purpose</a></h3>
+  <h3><a href="#1.2">1.2 Scope</a></h3>
+  <h3><a href="#1.3">1.3 Definitions, Acronyms, and Abbreviations</a></h3>
+  <h3><a href="#1.4">1.4 References</a></h3>
+  <h3><a href="#1.5">1.5 Overview</a></h3>
+  <h2><a href="#2">2. GENERAL DESCRIPTION</a></h2>
+  <h3><a href="#2.1">2.1 Product Perspective</a></h3>
+  <h3><a href="#2.2">2.2 Product Functions</a></h3>
+  <h3><a href="#2.3">2.3 User Characteristics</a></h3>
+  <h3><a href="#2.4">2.4 General Constraints</a></h3>
+  <h3><a href="#2.5">2.5 Assumptions and Dependencies</a></h3>
+  <h2><a href="#3">3. SPECIFIC REQUIREMENTS</a></h2>
+  <h3><a href="#3.1">3.1 External Interface Requirements</a></h3>
+  <h4><a href="#3.1.1">3.1.1 User Interfaces</a></h4>
+  <h4><a href="#3.1.2">3.1.2 Hardware Interfaces</a></h4>
+  <h4><a href="#3.1.3">3.1.3 Software Interfaces</a></h4>
+  <h4><a href="#3.1.4">3.1.4 Communications Interfaces</a></h4>
+  <h3><a href="#3.2">3.2 Functional Requirements</a></h3>
+  <h4><a href="#3.2.1">3.2.1 Database with courses</a></h4>
+  <h4><a href="#3.2.2">3.2.2 Practices</a></h4>
+  <h4><a href="#3.2.3">3.2.3 Achievements</a></h4>
+  <h3><a href="#3.3">3.3 Use Cases</a></h3>
+  <h4><a href="#3.3.1">3.3.1 Bloggers</a></h4>
+  <h4><a href="#3.3.2">3.3.2 Regular user</a></h4>
+  <h3><a href="#3.4">3.4 Non-Functional Requirements</a></h3>
+  <h4><a href="#3.4.1">3.4.1 Performance</a></h4>
+  <h4><a href="#3.4.2">3.4.2 Reliability</a></h4>
+  <h4><a href="#3.4.3">3.4.3 Availability</a></h4>
+  <h4><a href="#3.4.4">3.4.4 Security</a></h4>
+  <h4><a href="#3.4.5">3.4.5 Maintainability</a></h4>
+  <h4><a href="#3.4.6">3.4.6 Portability</a></h4>
+  <h3><a href="#3.5">3.5 Inverse Requirements</a></h3>
+  <h3><a href="#3.6">3.6 Design Constraints</a></h3>
+  <h3><a href="#3.7">3.7 Logical Database Requirements</a></h3>
+  <h3><a href="#3.8">3.8 Other Requirements</a></h3>
+  <h2><a href="#4">4. Analysis Models</a></h2>
+  <h3><a href="#4.1">4.1 Sequence Diagrams</a></h3>
+  <h3><a href="#4.2">4.2 Data Flow Diagrams (DFD)</a></h3>
+  <h3><a href="#4.3">4.3 State-Transition Diagrams (STD)</a></h3>
+  <h2><a href="#5">5. Change Management Process</a></h2>
+  <h2><a href="#A">A. Appendices</a></h2>
+  <h3><a href="#A.1">A.1 Appendix</a></h3>
+
+  <h1>Software Requirements Specification</h1>
+
+  <h2 id="1">1. Introduction</h2> 
+  This section gives a scope description and overview of everything included in this SRS document. Also, the purpose for this document is described and a list of abbreviations and definitions is provided.
+
+  <h3 id="1.1">1.1 Purpose</h3>
+  ​The purpose of this document is to present a detailed description of the Publer educational platform. It will explain the purpose and features of the application, the interfaces of the app, what the app will do, the constraints under which it must operate and how the application will react to external stimuli. This document is intended for both the stakeholders and the developers of the application.
+
+  <h3 id="1.2">1.2 Scope</h3> 
+  This service will be a Publer online educational platform for studying and publishing courses. This service will be designed to provide the most effective way to learn via interactive courses and low demanding means of creating new courses. By maximizing the simplicity of new courses, creating the system will meet the creators' needs while remaining easy to understand and use. More specifically, the platform allows creators to publish their courses online and get rewarded for each viewing and subscription to their course. Moreover, platform students will get the great number of different courses that will meet every single desired sphere of interest.
+
+  <h3 id="1.3">1.3 Definitions, Acronyms, and Abbreviations</h3> 
+  <ul>
+    <li>Course - Group of theory and practices combined in one unit </li>
+    <li>Creator - User that handles creation of one or more courses on the platform</li>
+    <li>Student - User that studier one or more courses on the platform (can be also a creator of other courses)</li>
+    <li>The platform (or Publer) - Online education platform Publer</li>
+    <li> User - The platform user</li>
+  </ul>
+
+  <h3 id="1.4">1.4 References</h3> 
+  No references yet
+
+  <h3 id="1.5">1.5 Overview</h3> 
+  The next chapter, the General Description section, of this document gives an overview of the functionality of the product. It describes the informal requirements and is used to establish a context for the technical requirements specification in the next chapter. The third chapter, Requirements Specification section, of this document is written primarily for the developers and describes in technical terms the details of the functionality of the product. Both sections of the document describe the same software product in its entirety, but are intended for different audiences and thus use different language.
+
+  <h2 id="2">2. General Description</h2> 
+  This section will give an overview of the whole system. The system will be explained in its context to show how the system interacts with other systems and introduce the basic functionality of it. It will also describe what type of stakeholders that will use the system and what functionality is available for each type. At last, the constraints and assumptions for the system will be presented.
+
+  <h3 id="2.1">2.1 Product Perspective</h3> 
+  The platform will be used for online learning and the dissemination of knowledge to others around the world. In the future, the product can be used for monetisation. For example, paid subscriptions to courses, purchase of specific courses, additional webinars, etc. Part of the income in this case will go to the maintainers and course creators.
+
+  <h3 id="2.2">2.2 Product Functions</h3> 
+  There are two main functions - creators and students side of the platform. Creators will be able to manage and create their own courses and publish them on the platform. Their interest is to get rewarded for every subscription on their profile or joining their course. Students will have the ability to learn online any course they want via joining it and then studying it.
+
+  <h3 id="2.4">2.3 User Characteristics</h3> 
+  Our product is mainly targeted at several key-groups: Students who would like to obtain extra knowledge at courses at their university. This courses could be provided by their own tutors as an additional information for the successful course completion People who want to learn something new in a certain field Teachers at the university who can post their personal courses for their students using the learning platform Blogger or influencers who can post their personal courses on various topics on the platform Companies who want to have a out-of-the-box platform for courses hosting
+
+  <h3 id="2.4">2.4 General Constraints</h3> 
+  The constraints are defined by the time (about 1,5 years of development) and the expenses - we need to create the platform using only free tools and software.
+
+  <h3 id="2.5">2.5 Assumptions and Dependencies</h3> 
+  We assume the platform to grow steadily, so our first goal is to release a public beta with all the essential functionality and then to develop it according to the new-coming feature requests from the users audience.
+
+  <h2 id="3">3. Specific Requirements</h2> 
+  This will be the largest and most important section of the SRS. The customer requirements will be embodied within Section 2, but this section will give the D-requirements that are used to guide the project's software design, implementation, and testing. Each requirement in this section should be: Correct Traceable (both forward and backward to prior/future artifacts) Unambiguous Verifiable (i.e., testable) Prioritized (with respect to importance and/or stability) Complete Consistent Uniquely identifiable (usually via numbering like 3.4.5.6) Attention should be paid to carefully organize the requirements presented in this section so that they may be easily accessed and understood. Furthermore, this SRS is not the software design document, therefore one should avoid the tendency to over-constrain (and therefore design) the software project within this SRS.
+
+  <h3 id="3.1">3.1 External Interface Requirements </h3>
+
+  <h4 id="3.1.1">3.1.1 User Interfaces</h4> 
+  Interactive design Gamification design Light + Dark themes Localization (Russian + English)
+
+  <h4 id="3.1.2">3.1.2 Hardware Interfaces</h4> 
+  The server HD interface Web connection service Server request service Database
+
+  <h4 id="3.1.3">3.1.3 Software Interfaces</h4> 
+  iOS application Notion database templates Tutorial for course creations
+
+  <h4 id="3.1.4">3.1.4 Communications Interfaces</h4> 
+  Course creators (at university and companies) External specialists (sound designers, localizators, etc.)
+
+  <h3 id="3.2">3.2 Functional Requirements </h3> 
+  This section describes specific features of the software project. If desired, some requirements may be specified in the use-case format and listed in the Use Cases Section.
+
+  <h4 id="3.2.1">3.2.1 Database with courses</h4> 
+  Easy course creation flow Tutorials for creators Export (Notion to Database) flow
+
+  <h4 id="3.2.2">.2.2 Practices</h4>
+  
+  3 Practice creation flow Practice statistics Auto suggestions on practices according to course progress
+
+  <h4 id="3.2.3">3.2.3 Achievements</h4> 
+  Integration with Apple Game center User statistics
+
+  <h3 id="3.3">3.3 Use Cases</h3>
+
+  <h4 id="3.3.1">3.3.1 Bloggers</h4> 
+
+  I am a popular blogger who wants to create a course on investments. I will turn to the Publer platform to host my personal course. I want people to subscribe to my course. The course will be taken by my subscribers and third-party users of the app
+
+  <h4 id="3.3.2">3.3.2 Regular user</h4> 
+  I am a user who has installed the Publer app for various courses, such as programming. I have enough free time to learn something new
+
+  <h3 id="3.4">3.4 Non-Functional Requirements </h3> 
+  Non-functional requirements may exist for the following attributes. Often these requirements must be achieved at a system-wide level rather than at a unit level. State the requirements in the following sections in measurable terms (e.g., 95% of transactions shall be processed in less than a second, system downtime may not exceed 1 minute per day, > 30 day MTBF value, etc).
+
+  <h4 id="3.4.1">3.4.1 Performance</h4> 
+  Number of courses depends on available storage capacity. For the public beta version we would like to provide 100 GB of storage. That would be enough for storing more 160 courses
+
+  <h4 id="3.4.2">3.4.2 Reliability</h4> 
+  The platform maintenance time should not prevent users from using it, so all the work should be done on the copy server and then be published to the deployment via one single and short change. For this purpose it is convenient to have mirror servers available for users in case the maintenance work will take a while MTBF = 30 days MTTR = 2-3 hours Defect Rate should be no more than 10-30 non critical bug per thousand lines of code
+
+  <h4 id="3.4.3">3.4.3 Availability</h4> 
+  Publicly available since publication in AppStore, partially available since publishing beta version in TestFlight
+
+  <h4 id="3.4.4">3.4.4 Security</h4> 
+  OAuth2.0 authorization process Keychain storage for sensitive user data Data encryption in cloud
+
+  <h4 id="3.4.5">3.4.5 Maintainability</h4> 
+  We should provide personal help and feedback service to monitor and find out vulnerabilities as soon as possible to start maintenance work immediately
+
+  <h4 id="3.4.6">3.4.6 Portability</h4> 
+  In the future will be ported to the Android systems in case of success
+
+  <h3 id="3.5">3.5 Inverse Requirements</h3> 
+  The Publer platform is not an online school with a specific theme. The platform can host different courses from different people. The Publer platform does not specialize in a particular area of study. The platform can accommodate courses in different areas of life for different people.
+
+  <h3 id="3.6">3.6 Design Constraints</h3> 
+  Beta version should be localized in English and Russian language Provide all the product's basic functionality in a “nice-looking” style.
+
+  <h3 id="3.7">3.7 Logical Database Requirements</h3> 
+  Non yet
+
+  <h3 id="3.8">3.8 Other Requirements</h3> 
+  Non yet
+
+  <h2 id="4">4. Analysis Models</h2> 
+  List all analysis models used in developing specific requirements previously given in this SRS. Each model should include an introduction and a narrative description. Furthermore, each model should be traceable to the SRS's requirements.
+
+  <h3 id="4.1">4.1 Sequence Diagrams</h3> 
+  Non yet
+
+  <h3 id="4.3">4.3 Data Flow Diagrams (DFD)</h3> 
+  Non yet
+
+  <h3 id="4.2">4.2 State-Transition Diagrams (STD)</h3> 
+  Non yet
+
+  <h2 id="5">5. Change Management Process</h2> 
+  Identify and describe the process that will be used to update the SRS, as needed, when project scope or requirements change. Who can submit changes and by what means, and how will these changes be approved.
+
+  <h2 id="A">A. Appendices</h2>
+
+  <h3 id="A.1">A.1 Appendix 1</h3> 
+  Nothing yet
+
+</body>
+
+</html>
